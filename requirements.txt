@@ -9,7 +9,7 @@ matplotlib == 3.3.4
 
 # Technocolab_Internship/.ipynb_checkpoints/ProjectRedditFinal-checkpoint.ipynb: 6
 # Technocolab_Internship/ProjectRedditFinal.ipynb: 6
-nltk == 3.5
+nltk >=3.4.5
 
 # Technocolab_Internship/.ipynb_checkpoints/ProjectRedditFinal-checkpoint.ipynb: 2
 # Technocolab_Internship/ProjectRedditFinal.ipynb: 2
