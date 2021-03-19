@@ -19,7 +19,7 @@ numpy == 1.19.2
 # Technocolab_Internship/.ipynb_checkpoints/ProjectRedditFinal-checkpoint.ipynb: 1
 # Technocolab_Internship/ProjectRedditFinal.ipynb: 1
 # Technocolab_Internship/app.py: 2
-pandas == 1.2.3
+pandas == 1.1.5
 
 # Technocolab_Internship/.ipynb_checkpoints/ProjectRedditFinal-checkpoint.ipynb: 26
 # Technocolab_Internship/ProjectRedditFinal.ipynb: 26
