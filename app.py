@@ -19,20 +19,17 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     if request.method == 'POST':
-	    message = request.form['Title']
+	    message = request.form['title']
 	    data = [message]
 	    vect = cv.transform(data).toarray()
 	    newtext=pd.DataFrame(vect)
-	    Upvote_ratio= float(request.form['Upvote_ratio'])
-	    Gilded = request.form["Gilded"]
-	    Number_of_Comments = int(request.form['Number_of_Comments'])
-	    neg = float(request.form['neg'])
-	    neu = float(request.form['neu'])
-	    pos= float(request.form['pos'])
-	    compound= float(request.form['compound'])
-	    data = np.array([[ Upvote_ratio, Gilded, neg, Number_of_Comments, neu, pos, compound]])
+	    upvote_ratio= float(request.form['upvote_ratio'])
+	    gilded = request.form["gilded"]
+	    num_comments = int(request.form['num_comments'])
+	    ups=int(request.form['ups'])
+	    data = np.array([[num_comments,gilded,upvote_ratio,ups]])
 	    data1=pd.DataFrame(data)
-	    newdata=pd.concat([data1,newtext],axis=1)
+	    newdata=pd.concat([newtext,data1],axis=1)
 	    prediction=clf.predict(newdata)
 	    output=round(prediction[0],2)
 	    return render_template('home.html',prediction_text="Score of your Title is. {}".format(output))

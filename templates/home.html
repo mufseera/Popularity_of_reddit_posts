@@ -22,15 +22,11 @@
 		<form action="{{ url_for('predict')}}" method="POST">
 		<p>Enter the Title of reddit post</p>
 		<!-- <input type="text" name="comment"/> -->
-		<textarea name="Title" rows="6" cols="50"></textarea><br>
-		<input class="form-input" type="text" name="Upvote_ratio" placeholder="Upvote_ratio"><br>
-        <input class="form-input" type="text" name="Gilded" placeholder="Gilded"><br>
-        <input class="form-input" type="text" name="Number_of_Comments" placeholder="Number_of_Comments"><br>
-        <input class="form-input" type="text" name="neg" placeholder="neg"><br>
-        <input class="form-input" type="text" name="neu" placeholder="neu"><br>
-        <input class="form-input" type="text" name="pos" placeholder="pos"><br>
-        <input class="form-input" type="text" name="compound" placeholder="compound"><br>
-
+		<textarea name="title" rows="6" cols="50"></textarea><br>
+		<input class="form-input" type="text" name="upvote_ratio" placeholder="Upvote_ratio"><br>
+        <input class="form-input" type="text" name="gilded" placeholder="Gilded"><br>
+        <input class="form-input" type="text" name="num_comments" placeholder="Number_of_Comments"><br>
+        <input class="form-input" type="text" name="ups" placeholder="ups"><br>
         <input type="submit" class="my-cta-button" value="Predict">
 
 		
